@@ -18,7 +18,11 @@ I write it in 2002
 以root登陆
 
 [~@root]# tar xzvf nms.tgz
+
 [~@root]# cd nms
+
 [nms@root]# chmod +x build.sh
+
 [nms@root]# ./build.sh [0-6]
+
 [nms@root]# ./bin/nei-nms
