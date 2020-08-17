@@ -1,0 +1,19 @@
+
+CC = /usr/bin/gcc
+MAKE = /usr/bin/make
+RM = /bin/rm
+
+DFLAGS = 
+ifeq ($(findstring -D__SEND_TRUE__, $(DFLAGS)), )
+LFLAGS = -lpthread 
+else
+LFLAGS = -lpthread  # NULL
+endif
+
+LOCALINCDIR = $(addprefix $(BASEDIR), include/)
+INCLUDEDIR = /usr/include $(LOCALINCDIR) 
+INCLUDE = $(addprefix -I, $(INCLUDEDIR))
+UTILDIR = $(addprefix $(BASEDIR), util/)
+CCFLAGS = $(INCLUDE) $(DFLAGS)
+
+
