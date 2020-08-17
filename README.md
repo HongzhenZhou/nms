@@ -1,4 +1,4 @@
-I write it in 2002
+I wrote it in 2002
 
 1. 简介
 
